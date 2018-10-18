@@ -19,7 +19,7 @@ import util.HibernateUtil;
 		urlPatterns={"/secure/login.controller"}
 )
 public class LoginServlet extends HttpServlet {
-	private CustomerService customerServiced;
+	private CustomerService customerService;
 	@Override
 	public void init() throws ServletException {
 		customerService = new CustomerService(
