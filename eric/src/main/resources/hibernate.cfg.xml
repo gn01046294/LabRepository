@@ -6,10 +6,11 @@
 	<session-factory>
 		<property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
 
-<!-- <property name="hibernate.connection.datasource">java:comp/env/jdbc/xxx</property> -->
-		<property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;database=java</property>
-		<property name="hibernate.connection.username">sa</property>
-		<property name="hibernate.connection.password">passw0rd</property>
+<property name="hibernate.connection.datasource">java:comp/env/jdbc/xxx</property>
+<!-- 		<property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;database=java</property> -->
+<!-- 		<property name="hibernate.connection.username">sa</property> -->
+<!-- 		<property name="hibernate.connection.password">passw0rd</property> -->
+
 		<property name="hibernate.current_session_context_class">thread</property>
 		<property name="hibernate.show_sql">true</property>
 

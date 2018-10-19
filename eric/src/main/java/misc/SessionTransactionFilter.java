@@ -29,9 +29,8 @@ public class SessionTransactionFilter implements Filter {
 			//以下為走出servlet之後
 			HibernateUtil.getSessionFactory().getCurrentSession().getTransaction().commit();
 		} catch (HibernateException e) {
+			HibernateUtil.getSessionFactory().getCurrentSession().getTransaction().rollback();
 			e.printStackTrace();
-		}finally {
-			HibernateUtil.shutdown();
 		}
 	}
 
