@@ -6,11 +6,14 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
+import org.springframework.stereotype.Repository;
 
 import com.sun.org.apache.regexp.internal.recompile;
 
 import util.HibernateUtil;
 
+
+@Repository
 public class ProductDAO_Hibernate implements ProductIDAO {
 
 	SessionFactory sessionFactory;
